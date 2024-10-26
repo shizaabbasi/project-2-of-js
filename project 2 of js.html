@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(151, 64, 231);
+    }
+    h3{color: antiquewhite;}
+</style>
+<body>
+    <center><h1 style="color:rgb(45, 102, 102)">Multiplicational operations</h1></center>
+    <p>First we will learn how to apply Multiplicational operation if there is only one value. It is also known as positional functioing.In the given example the user only gives the value of x and doesn't give the value of y so the system will automatically suppose the value of y and perform the operation and if the user gives both values x and y then the system will perform the actions accordingly. </p>
+    <button onclick="pf(89)">Execute js function for single input</button>
+    <button onclick="fp(34,78)">Execute js function for two inputs</button>
+    <script>
+        function pf(x,y){//positional function
+            if(y==undefined){
+                y=2
+            }
+            document.write(x*y)
+        }
+//Function for 2 inputs.
+        function fp(a,b){
+            if(b==undefined){
+                b=6
+            }
+            document.write(a*b)
+        }
+    </script>
+    <p>Now are are many ways to write a function which we will discuss below.</p>
+    <button onclick="shiza()">Click me</button>
+    <p id="c"></p>
+    <p id="d"></p>
+    <script>//In this way when we click on the button it will multiply it with the shown number.
+        var b=899;
+        function shiza(){
+            var a=4;
+            document.getElementById("c").innerHTML=a*b
+        }
+        document.getElementById("d").innerHTML=b
+    </script>
+    <h3>Function declaration</h3>
+    <script>
+        var result=function(a,b){
+            return a*b
+        }
+        document.write(result (5,10))
+        document.write("<br>")
+    
+        //Another way to write a function
+        function n2(a,b){
+    return a*b
+        }
+        document.write(n2(30,100))
+    </script>
+</body>
+</html>
